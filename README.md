@@ -1,7 +1,7 @@
 # NexTest
 NexTest是一个全面的自动化测试平台，集成API测试、Web测试、App测试、持续集成、配置管理等功能
 ~~~
-/auto-testing-platform
+/NexTest
 ├── /api                         # 后端API (使用Gin框架)
 │   ├── /handlers                # 请求处理器
 │   │   ├── app_testing.go       # 处理APP测试相关的API请求
