@@ -1,1 +1,44 @@
- 
+{
+  "appName": "NexTest",
+  "appVersion": "1.0.0",
+  "server": {
+    "httpPort": "8080",
+    "logFile": "/var/log/nextest.log"
+  },
+  "database": {
+    "driver": "mysql",
+    "host": "localhost",
+    "port": 3306,
+    "user": "root",
+    "password": "password",
+    "name": "nextest_db",
+    "maxConnections": 10
+  },
+  "jwt": {
+    "secret": "your_jwt_secret_key",
+    "expirationMinutes": 60
+  },
+  "externalAPIs": {
+    "paymentGateway": {
+      "url": "https://api.paymentgateway.com",
+      "apiKey": "your_api_key"
+    },
+    "emailService": {
+      "url": "https://api.emailservice.com",
+      "apiKey": "your_api_key"
+    }
+  },
+  "monitoring": {
+    "enabled": true,
+    "endpoint": "/metrics"
+  },
+  "featureFlags": {
+    "enableNewFeatureX": false,
+    "enableBetaFeatureY": true
+  },
+  "testDefaults": {
+    "timeoutSeconds": 120,
+    "retryAttempts": 3
+  }
+}
+
